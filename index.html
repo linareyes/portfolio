@@ -13,7 +13,6 @@
   <body>
 
     <div class="grid-container">
-    <header>
     <nav class="top-bar topbar-responsive">
     <div class="top-bar-title">
           <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
@@ -26,19 +25,23 @@
           <ul class="menu simple vertical medium-horizontal">
               <li> <a href="about/index.html">About</a></li>
               <li><a href="work/index.html">Work</a></li>
-              <li><a href="contact/index.html">Contact</a></li>
+
             </ul>
+
+
       </div>
       </div>
       </nav>
-      </header>
     </div>
+  </div>
+
+
 
 
 
       <div class="grid-container">
     <div class="grid-x grid-padding-x">
-    <div class="large-4 medium-4 cell">
+    <div class="large-2 medium-2 cell">
     <div class="page-header">
     <div class="content">
         <h2 class="animated fadeInUp delay-1">Hello, I'm Lina Reyes. </h2>
@@ -49,8 +52,8 @@
     </div>
     </div>
     </div>
-    <div class="large-1 medium-1 cell"> . </div>
-    <div class="large-7 medium-7 cell">
+    <div class="large-1 medium-1 cell">&nbsp;</div>
+    <div class="large-9 medium-9 cell">
         <img  src="./images/lina_11.jpg" />
     </div>
     </div>
@@ -59,19 +62,70 @@
 
 
 
-      <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-    <div class="cell small-12 medium-4 large-4">
-    <div><img src="http://placehold.it/450x310" /></div>
-    </div>
-    <div class="cell small-12 medium-4 large-4">
-    <div><img src="http://placehold.it/450x310" /> </div>
-    </div>
-    <div class="cell small-12 medium-4 large-4">
-    <div><img src="http://placehold.it/450x310" /></div>
-    </div>
-    </div>
-  </div> 
+
+
+
+
+  <div class="contact-panel" id="contact-panel" data-toggler=".is-active">
+  <a class="contact-panel-button" data-toggle="contact-panel">Contact Me!</a>
+
+
+  <form id="form2" name="form2" class="" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+          action="https://linareyes.wufoo.com/forms/m1j5cd4123nnif/#public">
+
+
+
+
+    <h4 class="">Reach Out</h4>
+    <div class="">I am always excited to meet and work with new people. Networking, freelance, or job offer? Drop me a line and lets chat! </div>
+
+
+
+
+    <label class="" id="title1" for="Field1">
+    Name <span id="req_1" class="req">*</span>
+    </label>
+    <input id="Field1" name="Field1" type="text" class="" value="" maxlength="255" tabindex="1" onkeyup=""  required placeholder="Joan Sanchez" />
+
+
+
+    <label class="" id="title104" for="Field104">
+    Email Address <span id="req_1" class="req">*</span>
+    </label>
+    <input id="Field104" name="Field104" type="text" class="" value="" maxlength="255" tabindex="3" onkeyup=""       placeholder="joan.sanchez@someemail.com" />
+
+
+
+
+    <label class="" id="title105" for="Field105">
+    Phone Number
+    </label>
+    <input id="Field105" name="Field105" type="text" class="" value="" maxlength="255" tabindex="4" onkeyup=""       placeholder="(123)-123-1234" />
+
+
+
+
+
+    <label class="desc" id="title107" for="Field107">Message: </label>
+
+    <textarea id="Field107" name="Field107" class="field textarea medium" spellcheck="true" rows="10" cols="70" tabindex="8"
+    onkeyup="" placeholder="Write something... "/>
+    </textarea>
+
+
+
+    <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit"/>
+
+
+
+
+
+    <input type="hidden" id="idstamp" name="idstamp" value="ic0NQD8QuUavCRIu1mbLOn6VgJy3H/QxYNZOCn43C04=" />
+    </form>
+
+
+</div>
+
 
 
 
@@ -89,6 +143,19 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+
+     $(window).scroll(function() {
+     var wintop = $(window).scrollTop(), docheight =
+
+     $(document).height(), winheight = $(window).height();
+     var scrolled = (wintop/(docheight-winheight))*100;
+
+     $('.scroll-line').css('width', (scrolled + '%'));
+});
+
+     </script>
 
   </body>
 </html>
